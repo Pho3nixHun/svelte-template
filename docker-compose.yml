@@ -1,10 +1,10 @@
 version: "3.7"
 services:
-    svelte-component-dev:
+    svelte-dev:
         build: .
         env_file:
             - docker.env
-        container_name: svelte-componet-dev
+        container_name: svelte-dev
         volumes:
             - "./docker/persistent:/srv/persistent"
             - "./:/srv/app"
