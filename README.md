@@ -1,16 +1,13 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
-
----
-
 # svelte app
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/brushtail-digital/svelte-template.
+This is a project template for [Svelte](https://svelte.dev) apps. 
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit brushtail-digital/svelte-template svelte-app
+npx degit Pho3nixHun/svelte-template svelte-app
 cd svelte-app
+npm run docker-up
 ```
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
@@ -20,18 +17,19 @@ cd svelte-app
 
 Install the dependencies...
 
+Connect with VSCode to the container. Be sure you run ```npm i``` in the container!
+ 
 ```bash
-cd svelte-app
-npm install
+container> npm i
 ```
 
 ...then start [Rollup](https://rollupjs.org):
 
 ```bash
-npm run dev
+container> npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5000](http://localhost:5000). You should see your app running. If not, check VSCode if port ```5000``` and ```35729``` are being forwarded. Edit a component file in `src`, save it, and reload the page to see your changes.
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
@@ -91,3 +89,7 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+### References
+
+This template was created based on https://github.com/brushtail-digital/svelte-template.
